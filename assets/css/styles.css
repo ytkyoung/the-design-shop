@@ -7,10 +7,13 @@
   --header2: 1.7rem;
   --header3: 1.6rem;
   --header4: 1.45rem;
+  --big: 2.5rem;
   --text: 1.4rem;
   --main-color: #323a45;
   --secondary-color: #848484;
-  --special-color: #28abb9;
+  --special-color: #790c5a;
+  --special2-color: #e6739f;
+  --burger-nav-color: #fff;
   --background-color: #414141;
   --gray-text: #525252;
   --line-height: 1;
@@ -23,10 +26,17 @@
   scroll-behavior: smooth;
 }
 
-/*
-#323A45
-#848484
-*/
+::-moz-selection {
+  color: #fff;
+  background: var(--special2-color);
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: var(--special2-color);
+  text-shadow: none;
+}
 
 * {
   margin: 0;
@@ -55,6 +65,13 @@ h3 {
   font-size: var(--header3);
   font-weight: lighter;
   margin-bottom: 0.4rem;
+}
+h4:hover {
+  color: var(--special-color);
+}
+
+h4:hover + h3 {
+  color: var(--special2-color);
 }
 
 li,
@@ -94,7 +111,7 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 #logo:hover {
-  color: var(--secondary-color);
+  color: var(--special-color);
 }
 .nav-links {
   display: flex;
@@ -116,7 +133,7 @@ nav {
 }
 
 .nav-links li a:hover {
-  color: var(--secondary-color);
+  color: var(--special-color);
 }
 .burger,
 .menu-check {
@@ -205,7 +222,6 @@ nav {
   font-size: 1rem;
   padding: 1.7rem;
   margin-top: 1.8rem;
-  /* background: cyan; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -215,7 +231,7 @@ nav {
 
 .footer-main li {
   font-size: var(--header4);
-  font-weight: 600;
+  font-weight: lighter;
 }
 
 .footer-main li a {
@@ -227,46 +243,52 @@ nav {
 }
 
 .footer-main li a:hover {
-  color: var(--secondary-color);
+  color: var(--special-color);
 }
 
-footer h2 {
-  font-weight: 800;
-  font-size: var(--header3);
-  margin-bottom: 4.2rem;
-}
-
-footer p > span {
+.footer-main p span {
   font-weight: 800;
   color: var(--main-color);
 }
 
-.design-shop a:hover {
-  color: var(--secondary-color);
-  color: red;
+.footer-main a span:hover {
+  color: var(--special-color);
 }
+
+footer h2 {
+  font-weight: 300;
+  font-size: var(--header3);
+  margin-bottom: 4rem;
+}
+footer h2:hover {
+  color: var(--special-color);
+}
+footer h2:hover + p span {
+  color: var(--special2-color);
+}
+
+footer h2:hover + li a {
+  color: var(--special2-color);
+}
+
 .newsletter p:last-child {
   font-style: italic;
 }
 
 .flex1 {
   flex: 2 0 30%;
-  /* background: lightpink; */
   padding-right: 12rem;
 }
 
 .flex2 {
   flex: 1 0 15%;
-  /* background: rgb(238, 0, 36); */
 }
 .flex3 {
   flex: 1 0 25%;
-  /* background: rgb(40, 50, 184); */
 }
 
 .flex4 {
   flex: 1 0 20%;
-  /* background: rgb(182, 255, 198); */
 }
 
 .copy-right h3 {
@@ -299,23 +321,27 @@ footer p > span {
     display: block;
     transition: all 0.5s ease;
   }
-  .nav-links a {
-    color: white;
-    font-size: var(--header1);
-    /* text-decoration: underline; */
-  }
   .nav-links li {
-    background-color: var(--special-color);
+    font-size: var(--header1);
+    font-weight: 800;
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
-  .to-top {
-    z-index: 202;
-    color: #fff;
-    transition: all 0.7s ease-in-out;
+  .nav-links li a {
+    color: var(--burger-nav-color);
   }
-  .to-top span {
-    font-size: 2.5rem;
+  .nav-links li a:visited {
+    color: var(--burger-nav-color);
+  }
+  .nav-links li a:hover {
+    color: var(--special2-color);
+  }
+  .logo-top {
+    z-index: 20;
+    color: var(--burger-nav-color);
+  }
+  .logo-top span {
+    font-size: var(--big);
     transition-delay: 3s;
     transition: all 0.7s ease-in-out;
   }
@@ -331,11 +357,9 @@ footer p > span {
     align-items: center;
     transition: transform 0.5s ease;
   }
-
   .nav-open {
     transform: translateX(-100%);
   }
-
   .toggle .line1 {
     transform: rotateZ(45deg) translateY(300%);
     background: white;

@@ -7,14 +7,14 @@ const logo = document.querySelector('#logo');
 
 burger.addEventListener('click', () => {
         nav.classList.toggle('nav-open');
-        logo.classList.toggle('to-top');
+        logo.classList.toggle('logo-top');
         burger.classList.toggle('toggle');
 });
 
 links.forEach((link) => {
         link.addEventListener('click', () => {
                 nav.classList.toggle('nav-open');
-                logo.classList.toggle('to-top');
+                logo.classList.toggle('logo-top');
                 burger.classList.toggle('toggle');
         });
 });
