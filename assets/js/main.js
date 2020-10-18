@@ -1,5 +1,6 @@
 // console.log("let's go!");
 
+// Burger Navi
 const nav = document.querySelector('.nav-links');
 const burger = document.querySelector('.burger');
 const links = nav.querySelectorAll('a');
@@ -344,46 +345,6 @@ function displayProductItems(productItems) {
         sectionCenter.innerHTML = displayProduct;
 }
 
-// const productName = document.createElement('h1');
-// productName.textContent = 'Produktname';
-// productName.classList.add('product-name');
-// console.log(productName);
-
-// const productBrand = document.createElement('p');
-// productBrand.textContent = 'Markenname';
-// productBrand.classList.add('brand-name');
-// console.log(productBrand);
-
-// const productPrice = document.createElement('p');
-// productPrice.textContent = '$19.00';
-// productPrice.classList.add('price');
-// console.log(productPrice);
-
-// const productImage = document.createElement('img');
-// productImage.src = 'assets/images/u8.png';
-// productImage.alt = 'Nice photo';
-
-// const myDiv = document.createElement('div');
-// myDiv.classList.add('product-wrapper');
-// console.log(myDiv);
-
-// const myDiv2 = document.createElement('div');
-// myDiv.classList.add('text');
-// console.log(myDiv);
-
-// myDiv.appendChild(productImage);
-// document.body.appendChild(myDiv2);
-// myDiv.appendChild(productName);
-// myDiv.appendChild(productBrand);
-// myDiv.appendChild(productPrice);
-
-// document.body.appendChild(myDiv);
-
-// // // oh shoot! we need to add somethint to the top. like a heading!
-// const heading = document.createElement('h2');
-// heading.textContent = 'Cool Things';
-
-// myDiv.insertAdjacentElement('beforebegin', heading);
 window.addEventListener('DOMContentLoaded', function () {
         displayProductItems(products);
 });
