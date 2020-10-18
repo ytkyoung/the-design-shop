@@ -15,10 +15,6 @@
   --special2-color: #e6739f;
   --burger-nav-color: #fff;
   --line-height: 2.3rem;
-  /* --link-color: #323a45;
-  --link-color-visited: #323a45;
-  --link-color-hover: #0069fc;
-  --link-color-active: #2edc1a; */
   scroll-behavior: smooth;
 }
 
@@ -65,7 +61,6 @@ h3 {
 h4:hover {
   color: var(--special-color);
 }
-
 h4:hover + h3 {
   color: var(--special2-color);
 }
@@ -87,6 +82,7 @@ a {
 }
 
 /* --- Navi --- */
+
 /* .main-header {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -99,6 +95,7 @@ nav {
   min-height: 15vh;
   padding: 6rem 1.5rem 5.3rem 1.5rem;
 }
+
 #logo {
   font-size: 1.8rem;
   flex: 1 1 20rem;
@@ -108,30 +105,29 @@ nav {
 #logo:hover {
   color: var(--special-color);
 }
+
 .nav-links {
   display: flex;
   justify-content: space-between;
   flex: 0 4 30%;
 }
 .nav-links li {
+  color: var(--main-color);
   font-size: var(--header4);
   letter-spacing: -0.01rem;
   font-weight: 800;
 }
-
 .nav-links li a {
   transition: all 0.3s ease-in-out;
 }
-
 .nav-links li a:visited {
   color: var(--main-color);
 }
-
 .nav-links li a:hover {
   color: var(--special-color);
 }
-.burger,
-.menu-check {
+
+.burger {
   display: none;
 }
 
@@ -214,6 +210,7 @@ nav {
 /* --- Footer --- */
 
 .footer-main {
+  color: var(--main-color);
   font-size: 1rem;
   padding: 1.7rem;
   margin-top: 1.8rem;
@@ -224,25 +221,12 @@ nav {
   line-height: var(--line-height);
 }
 
-.footer-main li {
-  font-size: var(--header4);
-  font-weight: lighter;
-}
-
-.footer-main li a {
-  transition: all 0.3s ease-in-out;
-}
-
-.footer-main li a:visited {
+.footer-main p span {
+  /* font-weight: 800; */
   color: var(--main-color);
 }
 
-.footer-main li a:hover {
-  color: var(--special-color);
-}
-
-.footer-main p span {
-  font-weight: 800;
+.footer-main a {
   color: var(--main-color);
 }
 
@@ -259,10 +243,6 @@ footer h2:hover {
   color: var(--special-color);
 }
 footer h2:hover + p span {
-  color: var(--special2-color);
-}
-
-footer h2:hover + li a {
   color: var(--special2-color);
 }
 
@@ -419,11 +399,11 @@ footer h2:hover + li a {
 
 /* @media screen and (min-width: 1700px) {
   html {
-    --header1: 2rem;
-    --header2: 2rem;
-    --header3: 4rem;
-    --header4: 3rem;
-    --text: 3rem;
-    --big: 8rem;
+  --header1: calc(1.5rem + 1vw);
+  --header2: 1.7rem;
+  --header3: 1.6rem;
+  --header4: 1.45rem;
+  --big: 2.5rem;
+  --text: 1.4rem;
   }
 } */
