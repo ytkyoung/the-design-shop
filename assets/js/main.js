@@ -350,17 +350,19 @@ const sectionCenter = document.querySelector('.section-center');
 function displayProductItems(productItems) {
         let displayProduct = productItems.map(function (item) {
                 // console.log(item);
-                let test = 'box1';
+                let box = 'box1';
                 if (item.spalten === 1) {
-                        console.log(`einer: ${item.einer}`);
-                        test = 'box2';
+                        console.log(`einer: ${item.spalten}`);
+                        box = 'box2';
                 } else {
-                        test = 'box1';
+                        box = 'box1';
                 }
 
                 return `
-        <article class="product-item ${test}">
-          <img src=${item.img} class="photo" alt="${item.alt}" />
+        <article class="product-item ${box}">
+          <a href=${item.link} target="_blank">
+            <img src=${item.img} alt="${item.alt}" />
+          </a>
           <div class="item-info">
             <header>
               <h4 class="product-name">${item.title}</h4>
