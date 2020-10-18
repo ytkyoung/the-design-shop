@@ -262,6 +262,9 @@ nav {
 }
 
 @media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
   .box1 {
     background-color: crimson;
     flex: 1 3 33.3333%;
@@ -269,9 +272,6 @@ nav {
   body {
     background-color: #271adc;
   }
-}
-
-@media (min-width: 1200px) {
 }
 
 @media screen and (min-width: 1700px) {
