@@ -15,10 +15,10 @@
   --special2-color: #e6739f;
   --burger-nav-color: #fff;
   --line-height: 2.3rem;
-  --link-color: #323a45;
+  /* --link-color: #323a45;
   --link-color-visited: #323a45;
   --link-color-hover: #0069fc;
-  --link-color-active: #2edc1a;
+  --link-color-active: #2edc1a; */
   scroll-behavior: smooth;
 }
 
