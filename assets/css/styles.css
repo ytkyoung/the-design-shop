@@ -140,11 +140,9 @@ nav {
 .product-name {
   color: #323a45;
 }
-
 .product-price {
   color: #323a45;
 }
-
 .product-brand {
   color: #848484;
 }
@@ -159,9 +157,6 @@ nav {
 
 .product-item {
   padding: 15px;
-}
-
-.product-item {
   font-weight: 100;
 }
 
@@ -231,7 +226,6 @@ footer h2:hover + p span {
 }
 
 .footer-main p span {
-  /* font-weight: 800; */
   color: var(--main-color);
 }
 
@@ -352,11 +346,11 @@ footer h2:hover + p span {
   footer h2 {
     font-weight: 800;
     font-size: var(--header1);
-    margin-bottom: 2.2rem;
   }
 
   footer p {
     font-size: 1.8rem;
+    margin-bottom: 2.2rem;
   }
   .flex1 {
     padding: 0;
