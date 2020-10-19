@@ -332,10 +332,10 @@ function displayProductItems(productItems) {
           </a>
           <div class="item-info">
             <header>
-              <h3 class="product-name">${item.title}</h3>
-              <h4 class="product-brand">${item.brand}</h4>
+              <h1 class="product-name">${item.title}</h1>
+              <h2 class="product-brand">${item.brand}</h2>
             </header>
-            <h5 class="product-price">${item.price}</h5>
+            <h3 class="product-price">${item.price}</h3>
           </div>
         </article>`;
         });

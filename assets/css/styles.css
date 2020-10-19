@@ -47,21 +47,24 @@ body {
   animation: opening 1s ease-in-out forwards;
 }
 
-h4 {
+h2 {
   font-size: var(--header3);
   font-weight: lighter;
   margin-bottom: 0.4rem;
 }
-h3,
-h5 {
+h1,
+h3 {
   font-size: var(--header2);
   font-weight: lighter;
   margin-bottom: 0.4rem;
 }
+h1:hover {
+  color: var(--special-color);
+}
 h3:hover {
   color: var(--special-color);
 }
-h3:hover + h4 {
+h1:hover + h2 {
   color: var(--special2-color);
 }
 
