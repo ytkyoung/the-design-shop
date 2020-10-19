@@ -335,7 +335,7 @@ function displayProductItems(productItems) {
               <h3 class="product-name">${item.title}</h3>
               <h4 class="product-brand">${item.brand}</h4>
             </header>
-            <h3 class="product-price">${item.price}</h3>
+            <h5 class="product-price">${item.price}</h5>
           </div>
         </article>`;
         });

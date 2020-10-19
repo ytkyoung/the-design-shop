@@ -47,13 +47,13 @@ body {
   animation: opening 1s ease-in-out forwards;
 }
 
-h4,
-h5 {
+h4 {
   font-size: var(--header3);
   font-weight: lighter;
   margin-bottom: 0.4rem;
 }
-h3 {
+h3,
+h5 {
   font-size: var(--header2);
   font-weight: lighter;
   margin-bottom: 0.4rem;
