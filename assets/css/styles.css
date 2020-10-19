@@ -47,24 +47,24 @@ body {
   animation: opening 1s ease-in-out forwards;
 }
 
-h2 {
+h3 {
   font-size: var(--header3);
   font-weight: lighter;
   margin-bottom: 0.4rem;
 }
-h1,
-h3 {
+h2,
+h4 {
   font-size: var(--header2);
   font-weight: lighter;
   margin-bottom: 0.4rem;
 }
-h1:hover {
+h2:hover {
   color: var(--special-color);
 }
-h3:hover {
+h4:hover {
   color: var(--special-color);
 }
-h1:hover + h2 {
+h2:hover + h3 {
   color: var(--special2-color);
 }
 
@@ -98,6 +98,7 @@ nav {
 
 #logo {
   font-size: 1.8rem;
+  font-weight: 800;
   flex: 1 1 20rem;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
@@ -115,7 +116,7 @@ nav {
   color: var(--main-color);
   font-size: var(--header4);
   letter-spacing: -0.01rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 .nav-links li a {
   transition: all 0.3s ease-in-out;
@@ -313,9 +314,12 @@ strong {
     z-index: 20;
     color: var(--burger-nav-color);
   }
+  .logo-top span:hover {
+    color: var(--special2-color);
+  }
   .logo-top span {
     font-size: var(--big);
-    transition-delay: 3s;
+
     transition: all 0.7s ease-in-out;
   }
   .nav-links {
